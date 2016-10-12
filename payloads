@@ -1,0 +1,449 @@
+/measures/2016-35/allDevs
+
+data : {
+  developers: [{
+      "Serious Coder": {
+         percentageTests: {
+            aboutTeam : 50%,   //Pourcentage de tests par rapport aux autres développeurs
+            aboutHimself : {          
+              successful : 90%,
+              failed : 10%
+            }
+         },
+         dates: [{
+          "2016-xx-yy" : {              // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {              // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...                            // La même chose pour les autres dates
+         ],
+      }
+    },
+    {
+      "Lucky Coder": {
+         percentageTests: {
+            aboutTeam: 10%,       //Pourcentage de tests par rapport aux autres développeurs
+            aboutHimself : {
+              successful : 0%,
+              failed : 100%
+            }
+         },
+         dates: [{
+          "2016-xx-yy" : {        // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : xx%,    // tests successful de xx %
+                  failed : yy%         // tests failed de yy %
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {      // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : xx%,   // tests successful de xx %
+                  failed : yy%        // tests failed de yy %
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+      ...
+  ]
+}
+
+
+/measures/2016-35/allComponents
+
+data : {
+  components: [{
+      "android": {
+         percentageTests: {
+            aboutComponents : 50%,   //Pourcentage de tests par rapport aux autres composants
+            aboutItself : {          
+              successful : 90%,
+              failed : 10%
+            }
+         },
+         dates: [{
+          "2016-xx-yy" : {          // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {          // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+    {
+      "REST API": {
+         percentageTests: {
+            aboutComponents: 10%,       //Pourcentage de tests par rapport aux autres composants
+            aboutItself : {
+              successful : 0%,
+              failed : 100%
+            }
+         },
+         dates: [{
+          "2016-xx-yy" : {              // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : xx%,     // tests successful de xx %
+                  failed : yy%          // tests failed de yy %
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {              // jour yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : xx%,     // tests successful de xx %
+                  failed : yy%          // tests failed de yy %
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+      ...
+  ]
+}
+
+/measures/2016-35/Serious Coder
+
+data : {
+         percentageTestsWeek: {
+          successful : 80%,
+          failed : 20%
+         },
+         dates: [{
+          "2016-xx-yy" : {          // jours yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {          // jours yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+         components: [
+              {"Business layer" : {
+                  percentageTests : {
+                        successful : 100%,
+                        failed : 0%
+                      }
+                  } 
+              },
+              {"REST API" : {
+                  percentageTests : {
+                        successful : 50%,
+                        failed : 50%
+                      }
+                  } 
+              },
+              ...
+         ]
+}
+
+
+/measures/2016-35/REST API
+
+data : {
+         percentageTestsWeek: {
+          successful : 50%,
+          failed : 50%
+         },
+         dates: [{
+          "2016-xx-yy" : {              // jours yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-xx-yy" : {              // jours yy du mois xx de l'année 2016
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+         developers: [
+              {"Serious Coder" : {
+                  percentageTests : {
+                        successful : 100%,
+                        failed : 0%
+                      }
+                  } 
+              },
+              {"Lucky Coder" : {
+                  percentageTests : {
+                        successful : 50%,
+                        failed : 50%
+                      }
+                  } 
+              },
+              ...
+         ]
+}
+
+
+
+/measures/allComponents
+
+data : {
+  components: [{
+      "android": {
+         percentageTests: {
+            aboutComponents : 50%,   //Pourcentage de tests par rapport aux autres composants
+            aboutItself : {          
+              successful : 90%,
+              failed : 10%
+            }
+         },
+         dates: [{
+          "2016-09-17" : {          // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-09-18" : {          // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+    {
+      "REST API": {
+         percentageTests: {
+            aboutComponents: 10%,       //Pourcentage de tests par rapport aux autres composants
+            aboutItself : {
+              successful : 0%,
+              failed : 100%
+            }
+         },
+         dates: [{
+          "2016-09-17" : {              // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : xx%,     // tests successful de xx %
+                  failed : yy%          // tests failed de yy %
+              }
+            }
+         },
+         {
+          "2016-09-18" : {              // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : xx%,     // tests successful de xx %
+                  failed : yy%          // tests failed de yy %
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+      ...
+  ]
+}
+
+
+
+/measures/allDevs
+
+data : {
+  developers: [{
+      "Serious Coder": {
+         percentageTests: {
+            aboutTeam : 50%,   //Pourcentage de tests par rapport aux autres développeurs
+            aboutHimself : {          
+              successful : 90%,
+              failed : 10%
+            }
+         },
+         dates: [{
+          "2016-09-17" : {          // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-09-18" : {          // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+    {
+      "Lucky Coder": {
+         percentageTests: {
+            aboutTeam: 10%,       //Pourcentage de tests par rapport aux autres développeurs
+            aboutHimself : {
+              successful : 0%,
+              failed : 100%
+            }
+         },
+         dates: [{
+          "2016-09-17" : {          // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : xx%,    // tests successful de xx %
+                  failed : yy%         // tests failed de yy %
+              }
+            }
+         },
+         {
+          "2016-09-18" : {            // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : xx%,   // tests successful de xx %
+                  failed : yy%        // tests failed de yy %
+              }
+            }
+         },
+         ...
+         ],
+      }
+    },
+      ...
+  ]
+}
+
+
+/measures/Serious Coder
+
+data : {
+         percentageTestsWeek: {
+          successful : 80%,
+          failed : 20%
+         },
+         dates: [{
+          "2016-09-17" : {              // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-09-18" : {            // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+         components: [
+              {"Business layer" : {
+                  percentageTests : {
+                        successful : 100%,
+                        failed : 0%
+                      }
+                  } 
+              },
+              {"REST API" : {
+                  percentageTests : {
+                        successful : 50%,
+                        failed : 50%
+                      }
+                  } 
+              },
+              ...
+         ]
+}
+
+/measures/REST API
+
+data : {
+         percentageTestsWeek: {
+          successful : 50%,
+          failed : 50%
+         },
+         dates: [{
+          "2016-09-17" : {              // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 100%,
+                  failed : 0%
+              }
+            }
+         },
+         {
+          "2016-09-18" : {              // jour de la semaine courante (date fictive de la semaine courante)
+              percentageTests : {
+                  successful : 30%,
+                  failed : 70%
+              }
+            }
+         },
+         ...
+         ],
+         developers: [
+              {"Serious Coder" : {
+                  percentageTests : {
+                        successful : 100%,
+                        failed : 0%
+                      }
+                  } 
+              },
+              {"Lucky Coder" : {
+                  percentageTests : {
+                        successful : 50%,
+                        failed : 50%
+                      }
+                  } 
+              },
+              ...
+         ]
+}
+
+
+/systemState/
+
+data : {
+         howMuchDaysSinceLastData: 3 
+}
